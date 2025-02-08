@@ -39,20 +39,29 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>Overview</p>
+        <h2 className={styles.sectionHeadText}>ABOUT ME</h2>
       </motion.div>
-
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
+  variants={fadeIn("", "", 0.1, 1)}
+  className='mt-4 text-secondary text-[26px] max-w-none w-full leading-[30px]'
+>
+  <div className="flex items-center">
+    <span className="text-xl mr-2">•</span> Expertise in React.js, Node.js, Next.js, JavaScript, and TypeScript.
+  </div>
+  <div className="flex items-center">
+    <span className="text-xl mr-2">•</span> Focused on building intuitive, high-performance user experiences.
+  </div>
+  <div className="flex items-center">
+    <span className="text-xl mr-2">•</span> Constantly refining skills for clean, maintainable code.
+  </div>
+  <div className="flex items-center">
+    <span className="text-xl mr-2">•</span> Currently Seeking opportunities to apply expertise to web development projects.
+  </div>
+  <div className="flex items-center">
+    <span className="text-xl mr-2">•</span>  I identify as a developer with expertise in following : 
+  </div>
+</motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
