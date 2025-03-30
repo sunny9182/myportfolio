@@ -39,28 +39,31 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Overview</p>
+        <p className={styles.sectionSubText}>My Overview</p>
         <h2 className={styles.sectionHeadText}>ABOUT ME</h2>
       </motion.div>
       <motion.p
   variants={fadeIn("", "", 0.1, 1)}
-  className='mt-4 text-secondary text-[26px] max-w-none w-full leading-[30px]'
+  className='mt-3 text-secondary text-[26px] max-w-none w-full leading-[30px]'
 >
+<div className="space-y-4">
   <div className="flex items-center">
-    <span className="text-xl mr-2">•</span> Expertise in React.js, Node.js, Next.js, JavaScript, and TypeScript.
+    <span className="text-xl mr-2">•</span> With 3 years of Experience, I specialize in creating high-performance websites.
   </div>
   <div className="flex items-center">
-    <span className="text-xl mr-2">•</span> Focused on building intuitive, high-performance user experiences.
+    <span className="text-xl mr-2">•</span> Passionate about crafting scalable, intuitive, and seamless user experiences.
   </div>
   <div className="flex items-center">
-    <span className="text-xl mr-2">•</span> Constantly refining skills for clean, maintainable code.
+    <span className="text-xl mr-2">•</span> Currently seeking new opportunities and jobs to channel my skills.
   </div>
   <div className="flex items-center">
-    <span className="text-xl mr-2">•</span> Currently Seeking opportunities to apply expertise to web development projects.
+    <span className="text-xl mr-2">•</span> Constantly refining skills for clean, optimized and maintainable code.
   </div>
   <div className="flex items-center">
-    <span className="text-xl mr-2">•</span>  I identify as a developer with expertise in following : 
+    <span className="text-xl mr-2">•</span> These are the areas I’m passionate about and highly skilled in :
   </div>
+</div>
+
 </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

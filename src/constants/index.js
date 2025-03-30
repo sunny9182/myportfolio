@@ -22,6 +22,17 @@ import {
   carrent,
   jobit,
   tripguide,
+  video,
+  logrocket,
+  freelance,
+  smartknower,
+  automailai,
+  jobsculptai,
+  suburbia,
+  iphone,
+  videoconnect,
+  soda,
+  gamingstore,
   threejs,
 } from "../assets";
 
@@ -36,25 +47,26 @@ export const navLinks = [
   },
   {
     id: "contact",
-    title: "CONTACT",
+    title: "CONTACT ME",
   },
+  
 ];
 
 const services = [
   {
-    title: "REACT.JS DEVELOPER",
+    title: "FRONTEND DEVELOPMENT",
     icon: web,
   },
   {
-    title: "NEXT.JS DEVELOPER",
+    title: "FULLSTACK DEVELOPMENT",
     icon: mobile,
   },
   {
-    title: "NODE.JS DEVELOPER",
+    title: "SOFTWARE ENGINEERING",
     icon: backend,
   },
   {
-    title: "SOFTWARE ENGINEER",
+    title: "WEB DESIGN",
     icon: creator,
   },
 ];
@@ -116,55 +128,48 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Front End Development Advisor",
+    company_name: "LogRocket",
+    icon: logrocket,
+    iconBg: "#383E56",
+    date: "Dec 2024 – Present",
+    points: [
+      "Led front-end development discussions and provided insights on best practices, performance optimizations, scalability.",
+      "Collaborated with designers, product managers, backend engineers to enhance maintainability and user experience.",
+    ],
+  },
+  {
+    title: " Next.js Developer",
+    company_name: "AutoMail AI",
+    icon: automailai,
+    iconBg: "#E6DEDD",
+    date: "Oct 2024 - Dec 2024",
+    points: [
+      "Wrote clean, efficient code, to improve maintainability, reusability.",
+      "Followed microservices architecture for modularity and integrated NoSQL databases like MongoDB.",
+    ],
+  },
+  {
+    title: "Front End Developer",
+    company_name: "FreeLance Developer",
+    icon: freelance,
+    iconBg: "#383E56",
+    date: "Jun 2022 – Oct 2024",
+    points: [
+      "Built full stack web applications for clients implementing modern frontend development practices",
+      "Developed responsive 3D projects and developed Single Page Applications (SPAs) for clients using React.js and Next.js.",
+      "Developed high-performance apps with SEO Optimization,worked with ui/ux designers and Performed code reviews",
+    ],
+  },
+  {
     title: "Full Stack Developer",
     company_name: "SmartKnower",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: " React.js Developer",
-    company_name: "ABC",
-    icon: tesla,
+    icon: smartknower,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jul 2021 – Oct 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React.js Developer",
-    company_name: "XYZ",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Content Board Member",
-    company_name: "LogRocket",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built immersive and interactive web apps using Next.js, React.js, TailwindCSS, Material UI, and other UI libraries.",
+      "Developed real-time apps with Socket.io, scalable cloud solutions on Google Cloud/Azure, and integrated APIs",
     ],
   },
 ];
@@ -195,70 +200,104 @@ const testimonials = [
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
+// constants.js
 
-const projects = [
+ const projects = [
   {
-    name: "MOVIERANK",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    name: "CHATWITHPDF-AI ",
+    description: "Built a Full-Stack AI SaaS Application to chat with any PDF you want using AWS S3 & OpenAI APIs",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "openai", color: "text-blue-500" },
+      { name: "Next.js", color: "text-green-500" },
+      { name: "AWS S3", color: "text-blue-500" },
+      { name: "TypeScript", color: "text-green-500" },
+      { name: "ClerkAuth", color: "text-blue-500" },
+      { name: "TailwindCSS", color: "text-green-500" },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    video: video,
+    project_link: "video",
   },
   {
-    name: "NOGYM",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    name: "3D SKATEBOARDS",
+    description: "Developed responsive 3D skateboard Single Page Application (SPA) using  Next.js",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      { name: "Next.js", color: "text-yellow-500" },
+      { name: "TailwindCSS", color: "text-red-500" },
+      { name: "TypeScript", color: "text-yellow-500" },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    video: suburbia,
+    project_link: "https://yourproject2.com",
   },
   {
-    name: "TOURIST",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: "3D SODA",
+    description: " Built immersive and interactive 3D soda app using Next.js, TailwindCSS.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "Next.js", color: "text-yellow-500" },
+      { name: "TailwindCSS", color: "text-red-500" },
+      { name: "TypeScript", color: "text-yellow-500" },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    video: soda,
+    project_link: "https://yourproject2.com",
+  },
+  {
+    name: "JOBSCULPT-AI",
+    description: "Built Scalable full-stack AI SaaS to Generate Resumes and Cover-letters with AI and built AI interviewer with GeminiAI",
+    tags: [
+      { name: "GeminiAI", color: "text-blue-500" },
+      { name: "Next.js", color: "text-green-500" },
+      { name: "PostgreSQL", color: "text-blue-500" },
+      { name: "NeonDB", color: "text-green-500" },
+
+    ],
+    video: jobsculptai,
+    project_link: "https://yourproject2.com",
+  },
+  {
+    name: "VIDEOMEET ",
+    description: "Built real-time video conferencing platform with live streaming features, text chat and video chat, file sharing and screen sharing.",
+    tags: [
+      { name: "Next.js", color: "text-yellow-500" },
+      { name: "Stream", color: "text-red-500" },
+      { name: "TailwindCSS", color: "text-yellow-500" },
+      { name: "Clerk", color: "text-red-500" },
+    ],
+    video: videoconnect,
+    project_link: "https://yourproject2.com",
+  },
+  {
+    name: "Gaming Store",
+    description: "Built immersive and cutting edge 3D gaming store app using React.js, TailwindCSS, GSAP.",
+    tags: [
+      { name: "React.js", color: "text-green-500" },
+      { name: "TailwindCSS,", color: "text-blue-500" },
+      { name: "GSAP,", color: "text-green-500" },
+    ],
+    video:gamingstore,
+    project_link: "https://yourproject2.com",
+  },
+  {
+    name: "Iphone Clone",
+    description: "  Built a responsive 3D iphone Single Page Application (SPA) using  Next.js",
+    tags: [
+      { name: "React.js", color: "text-yellow-500" },
+      { name: "Three.js", color: "text-red-500" },
+      { name: "TailwindCSS", color: "text-red-500" },
+    ],
+    video:iphone,
+    project_link: "https://yourproject2.com",
+  },
+  {
+    name: "JOBSCULPT-AI",
+    description: "Built Scalable full-stack AI SaaS to Generate Resumes and Cover-letters with AI and built AI interviewer with GeminiAI",
+    tags: [
+      { name: "GeminiAI", color: "text-blue-500" },
+      { name: "Next.js", color: "text-green-500" },
+      { name: "PostgreSQL", color: "text-blue-500" },
+      { name: "NeonDB", color: "text-green-500" },
+
+    ],
+    video: jobsculptai,
+    project_link: "https://yourproject2.com",
   },
 ];
 

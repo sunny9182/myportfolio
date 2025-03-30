@@ -4,4 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+  assetsInclude: ['**/*.mov'], // This allows .mov files to be treated as assets
+});
