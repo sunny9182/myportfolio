@@ -25,7 +25,6 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import logrocket from "./company/logrocket.png";
 import freelance from "./company/freelance.jpg";
-import smartknower from "./company/smartknower.png";
 import automailai from "./company/automailai.webp";
 import video from "./video.mov";
 import suburbia from "./suburbia.mp4";
@@ -37,6 +36,8 @@ import jobsculptai from "./jobsculptai.mov";
 import videoconnect from "./videoconnect.mov";
 import gamingstore from "./gamingstore.mp4";
 import iphone from "./iphone.mp4";
+import smartknower from './company/smartknower.png';
+
 
 export {
   logo,
