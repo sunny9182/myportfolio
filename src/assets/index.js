@@ -36,7 +36,7 @@ import jobsculptai from "./jobsculptai.mp4";
 import videoconnect from "./videoconnect.mov";
 import gamingstore from "./gamingstore.mp4";
 import iphone from "./iphone.mp4";
-import smartknower from './company/smartknower.png';
+import smartknower from './company/Internship.png';
 
 
 export {
