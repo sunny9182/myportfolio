@@ -28,15 +28,15 @@ import freelance from "./company/freelance.jpg";
 import smartknower from "./company/smartknower.png";
 import automailai from "./company/automailai.webp";
 import video from "./video.mov";
-import suburbia from "./suburbia.mov";
-import soda from "./soda.mov";
+import suburbia from "./suburbia.mp4";
+import soda from "./soda.mp4";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import jobsculptai from "./jobsculptai.mov";
 import videoconnect from "./videoconnect.mov";
-import gamingstore from "./gamingstore.mov";
-import iphone from "./iphone.mov";
+import gamingstore from "./gamingstore.mp4";
+import iphone from "./iphone.mp4";
 
 export {
   logo,
