@@ -7,7 +7,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-const resumeLink = "/path/to/your/resume.pdf"; // Update with the actual path to your resume
+const resumeLink = "/SAICHARAN_RESUME.pdf"; // Link to the public folder
 
 const Contact = () => {
   const formRef = useRef();
