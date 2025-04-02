@@ -3,11 +3,12 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { projects } from "../constants"; // Import projects from constants.js
+import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({ index, name, description, tags, video, project_link }) => {
   return (
+    <section id="work" className="mt-20">
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       onClick={() => window.open(project_link, "_blank")}
@@ -17,24 +18,15 @@ const ProjectCard = ({ index, name, description, tags, video, project_link }) =>
         options={{ max: 25, scale: 1, speed: 400 }}
         className="bg-tertiary p-6 rounded-2xl w-full flex flex-col items-center shadow-lg"
       >
-        {/* Adjusted Video Section with reduced height */}
         <div className="relative w-full h-[260px] sm:h-[300px] lg:h-[340px] rounded-lg overflow-hidden">
-          <video
-            src={video}
-            autoPlay
-            loop
-            muted
-            className="w-full h-full object-cover"
-          />
+          <video src={video} autoPlay loop muted className="w-full h-full object-cover" />
         </div>
 
-        {/* Centered Text Content */}
         <div className="mt-6 text-center">
           <h3 className="text-white font-bold text-[26px]">{name}</h3>
           <p className="mt-3 text-secondary text-[16px] max-w-[400px] mx-auto">{description}</p>
         </div>
 
-        {/* Tags */}
         <div className="mt-4 flex flex-wrap justify-center gap-3">
           {tags.map((tag) => (
             <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
@@ -44,12 +36,13 @@ const ProjectCard = ({ index, name, description, tags, video, project_link }) =>
         </div>
       </Tilt>
     </motion.div>
+    </section>
   );
 };
 
 const Works = () => {
   return (
-    <>
+    <section id="projects" className="mt-20">
       <motion.div variants={textVariant()} className="mt-20">
         <p className={`${styles.sectionSubText} text-center text-[20px]`}>Projects</p>
         <h2 className={`${styles.sectionHeadText} text-center text-[34px]`}>MY WORK</h2>
@@ -60,17 +53,17 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-10 text-secondary text-[18px] max-w-3xl leading-[30px] text-center"
         >
-         The Following projects showcase my skills and experience through real-world work. Sign-in to explore them and see my expertise in action!
+          The Following projects showcase my skills and experience through real-world work.
+          Sign-in to explore them and see my expertise in action!
         </motion.p>
       </div>
 
-      {/* Adjusted Grid Layout with more left margin */}
       <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 justify-center pl-48 pr-10"> 
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

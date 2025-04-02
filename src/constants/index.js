@@ -25,7 +25,7 @@ import {
   video,
   logrocket,
   freelance,
-  smartknower,
+  Internship,
   automailai,
   jobsculptai,
   suburbia,
@@ -40,6 +40,10 @@ export const navLinks = [
   {
     id: "about",
     title: "ABOUT ME",
+  },
+  {
+    id: "Experience",
+    title: "EXPERIENCE",
   },
   {
     id: "work",
@@ -164,7 +168,7 @@ const experiences = [
   {
     title: "Full Stack Developer",
     company_name: "SmartKnower",
-    icon: smartknower,
+    icon: Internship,
     iconBg: "#E6DEDD",
     date: "Jul 2021 – Oct 2021",
     points: [
@@ -215,7 +219,7 @@ const testimonials = [
       { name: "TailwindCSS", color: "text-green-500" },
     ],
     video: video,
-    project_link: "video",
+    project_link: "https://chatwithmypdf.vercel.app/",
   },
   {
     name: "3D SKATEBOARDS",
@@ -226,7 +230,7 @@ const testimonials = [
       { name: "TypeScript", color: "text-yellow-500" },
     ],
     video: suburbia,
-    project_link: "https://yourproject2.com",
+    project_link: "https://3-dskateboard.vercel.app/",
   },
   {
     name: "3D SODA",
@@ -237,7 +241,7 @@ const testimonials = [
       { name: "TypeScript", color: "text-yellow-500" },
     ],
     video: soda,
-    project_link: "https://yourproject2.com",
+    project_link: "https://soda-ga1h.vercel.app/",
   },
   {
     name: "JOBSCULPT-AI",
@@ -250,7 +254,7 @@ const testimonials = [
 
     ],
     video: jobsculptai,
-    project_link: "https://yourproject2.com",
+    project_link: "https://jobsculptai.vercel.app/",
   },
   {
     name: "VIDEOMEET ",
@@ -261,8 +265,8 @@ const testimonials = [
       { name: "TailwindCSS", color: "text-yellow-500" },
       { name: "Clerk", color: "text-red-500" },
     ],
-    video: videoconnect,
-    project_link: "https://yourproject2.com",
+    video:videoconnect,
+    project_link: "https://video-connect-black.vercel.app/",
   },
   {
     name: "Gaming Store",
@@ -273,7 +277,7 @@ const testimonials = [
       { name: "GSAP,", color: "text-green-500" },
     ],
     video:gamingstore,
-    project_link: "https://yourproject2.com",
+    project_link: "https://saicharangaming.vercel.app/",
   },
   {
     name: "Iphone Clone",
@@ -284,7 +288,7 @@ const testimonials = [
       { name: "TailwindCSS", color: "text-red-500" },
     ],
     video:iphone,
-    project_link: "https://yourproject2.com",
+    project_link: "https://iphone-nu-six.vercel.app/",
   },
   {
     name: "JOBSCULPT-AI",
@@ -297,8 +301,9 @@ const testimonials = [
 
     ],
     video: jobsculptai,
-    project_link: "https://yourproject2.com",
+    project_link: "https://jobsculptai.vercel.app/",
   },
 ];
+
 
 export { services, technologies, experiences, testimonials, projects };

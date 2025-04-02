@@ -54,10 +54,10 @@ const About = () => {
     <span className="text-xl mr-2">•</span> Passionate about crafting scalable, intuitive, and seamless user experiences.
   </div>
   <div className="flex items-center">
-    <span className="text-xl mr-2">•</span> Currently seeking new opportunities and jobs to channel my skills.
+    <span className="text-xl mr-2">•</span> Constantly refining skills for clean, optimized and maintainable code.
   </div>
   <div className="flex items-center">
-    <span className="text-xl mr-2">•</span> Constantly refining skills for clean, optimized and maintainable code.
+    <span className="text-xl mr-2">•</span> Currently seeking new opportunities and jobs to channel my skills.
   </div>
   <div className="flex items-center">
     <span className="text-xl mr-2">•</span> These are the areas I’m passionate about and highly skilled in :

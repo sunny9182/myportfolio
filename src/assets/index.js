@@ -33,17 +33,17 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import jobsculptai from "./jobsculptai.mp4";
-import videoconnect from "./videoconnect.mov";
+import videoconnect from "./videoconnect.mp4";
 import gamingstore from "./gamingstore.mp4";
 import iphone from "./iphone.mp4";
-import smartknower from './company/Internship.png';
+import Internship from './company/Internship.png';
 
 
 export {
   logo,
   logrocket,
   freelance,
-  smartknower,
+  Internship,
   automailai,
   gamingstore,
   iphone,
