@@ -15,9 +15,9 @@ const ProjectCard = ({ index, name, description, tags, video, project_link }) =>
       className="cursor-pointer w-full sm:w-[480px] lg:w-[600px] mb-6"
     >
       <Tilt
-        options={{ max: 25, scale: 1, speed: 400 }}
-        className="bg-tertiary p-6 rounded-2xl w-full flex flex-col items-center shadow-lg"
-      >
+  options={{ max: 25, scale: 1, speed: 400 }}
+  className="p-6 rounded-2xl w-full flex flex-col items-center shadow-lg bg-transparent border border-gray-700 backdrop-blur-md"
+>
         <div className="relative w-full h-[260px] sm:h-[300px] lg:h-[340px] rounded-lg overflow-hidden">
           <video src={video} autoPlay loop muted className="w-full h-full object-cover" />
         </div>

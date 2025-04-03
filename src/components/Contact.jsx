@@ -61,15 +61,15 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        {/* Resume Button */}
-        <div className="flex justify-center mb-6">
+       {/* Resume Button */}
+<div className="flex justify-center mb-6">
   <a
     href={resumeLink}
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-white py-2 px-24 rounded-lg text-black font-semibold shadow-md hover:scale-105 transition-transform"
+    className="flex items-center gap-3 bg-gradient-to-r from-blue-500 to-purple-600 py-4 px-10 rounded-lg text-white font-bold text-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out border border-white/20"
   >
-    View/Download Resume
+    <span>📄 VIEW / DOWNLOAD RESUME</span>
   </a>
 </div>
 
