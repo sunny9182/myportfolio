@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
@@ -7,35 +7,70 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({ index, name, description, tags, video, project_link }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Stop observing once video is visible
+        }
+      },
+      { threshold: 0.5 } // Load video when 50% of it is in view
+    );
+
+    if (videoRef.current) observer.observe(videoRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="work" className="mt-20">
-    <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      onClick={() => window.open(project_link, "_blank")}
-      className="cursor-pointer w-full sm:w-[480px] lg:w-[600px] mb-6"
-    >
-      <Tilt
-  options={{ max: 25, scale: 1, speed: 400 }}
-  className="p-6 rounded-2xl w-full flex flex-col items-center shadow-lg bg-transparent border border-gray-700 backdrop-blur-md"
->
-        <div className="relative w-full h-[260px] sm:h-[300px] lg:h-[340px] rounded-lg overflow-hidden">
-          <video src={video} autoPlay loop muted className="w-full h-full object-cover" />
-        </div>
+      <motion.div
+        variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+        onClick={() => window.open(project_link, "_blank")}
+        className="cursor-pointer w-full sm:w-[480px] lg:w-[600px] mb-6"
+      >
+        <Tilt
+          options={{ max: 25, scale: 1, speed: 400 }}
+          className="p-6 rounded-2xl w-full flex flex-col items-center shadow-lg bg-transparent border border-gray-700 backdrop-blur-md"
+        >
+          <div 
+            ref={videoRef} 
+            className="relative w-full h-[260px] sm:h-[300px] lg:h-[340px] rounded-lg overflow-hidden"
+          >
+            {isVisible ? (
+              <video 
+                src={video} 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <div className="w-full h-full bg-gray-900 flex items-center justify-center text-gray-400">
+                Loading video...
+              </div>
+            )}
+          </div>
 
-        <div className="mt-6 text-center">
-          <h3 className="text-white font-bold text-[26px]">{name}</h3>
-          <p className="mt-3 text-secondary text-[16px] max-w-[400px] mx-auto">{description}</p>
-        </div>
+          <div className="mt-6 text-center">
+            <h3 className="text-white font-bold text-[26px]">{name}</h3>
+            <p className="mt-3 text-secondary text-[16px] max-w-[400px] mx-auto">{description}</p>
+          </div>
 
-        <div className="mt-4 flex flex-wrap justify-center gap-3">
-          {tags.map((tag) => (
-            <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-      </Tilt>
-    </motion.div>
+          <div className="mt-4 flex flex-wrap justify-center gap-3">
+            {tags.map((tag) => (
+              <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
+                #{tag.name}
+              </p>
+            ))}
+          </div>
+        </Tilt>
+      </motion.div>
     </section>
   );
 };
